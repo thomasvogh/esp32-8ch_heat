@@ -4,5 +4,6 @@
 - button
 - Xiaomi Thermometer LYWSD03MMC
   * Using [link](https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html)
-  * Custom firmware 
+  * Custom firmware 4.2
+  * BTHome v1 
 
