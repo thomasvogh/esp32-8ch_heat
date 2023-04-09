@@ -16,14 +16,14 @@ api:
     key: "a9EA7DKGzZc5wT/IoTLowRZPfAh+Hyx6maFg5cW1Jsc="
 
 ota:
-  password: "b86716891e73cdf7532ea69d52b53a2a"
+  password: !secret ota
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   fast_connect: true
   use_address: 192.168.1.47
-  domain: !secret
+  domain: !secret domain
   manual_ip:
     static_ip: 192.168.1.47
     gateway: 192.168.1.1
@@ -82,6 +82,10 @@ switch:
   - platform: gpio
     name: "Light"
     pin: 23
+
+  - platform: gpio
+    name: "Pump"
+    pin: 17
 
 sensor:
   - platform: homeassistant
@@ -228,4 +232,3 @@ display:
           }else{
             it.circle(100, 45, 15); 
           }          
-
